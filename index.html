@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Фен клуб за любители на котки – Мяукащ свят.">
+    <meta name="keywords" content="котки, фен клуб, домашни любимци, галерия, информация">
+    <meta name="author" content="Мяукащ свят">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мяукащ свят – Фен клуб за котки</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" onclick="window.location.href='../html/index.html'">
+            <img src="/images/logo.png" alt="Лого" class="logo">
+            <h1>Мяукащ свят</h1>
+            <img src="../images/logo2.png" alt="Mirror лого" class="logo">
+        </div>
+
+        <div class="nav">
+            <a href="/html/index.html">Начало</a>
+            <a href="/html/articles.html">Статии</a>
+            <a href="/html/gallery.html">Галерия</a>
+            <a href="/html/about.html">За нас</a>
+            <a href="/html/contact.html">Контакти</a>
+        </div>
+
+        <div class="content">
+            <h2>Добре дошли в света на котките!</h2>
+            <p>„Мяукащ свят“ е онлайн място за всички, които обичат котки – пухкави, грациозни, игриви и непредсказуеми. В нашия клуб ще намериш съмишленици, снимки, съвети, истории и много „мяу“!</p>
+
+            <div class="info-section">
+                <h3>📜 История на котката като домашен любимец</h3>
+                <p>Домашната котка (Felis catus) е живяла с хората повече от 9000 години. Още в Древен Египет котките са били почитани и дори мумифицирани. Те са се смятали за защитници на дома, особено срещу мишки и зли духове.</p>
+            </div>
+        
+            <div class="info-section cat-benefits">
+                <div class="cat-text">
+                    <h3>💖 Защо да отглеждаме котка?</h3>
+                    <ul>
+                        <li>Намаляват стреса и тревожността</li>
+                        <li>Лесни за отглеждане и поддръжка</li>
+                        <li>Независими, но привързани</li>
+                        <li>Осигуряват компания и уют</li>
+                        <li>Разбират настроението ти</li>
+                    </ul>
+            
+                    <h3>🐾 Как да се грижим за нашата котка?</h3>
+                    <ul>
+                        <li>Осигурете й достатъчно място за игра и почивка</li>
+                        <li>Не забравяйте редовно да я храните с качествена храна</li>
+                        <li>Давайте й внимание и играйте с нея всеки ден</li>
+                        <li>Редовно я водете на ветеринар за профилактика и ваксиниране</li>
+                    </ul>
+                    
+                    <p>За повече информация и съвети, можете да натиснете бутона по-долу и да прочетете нашите статии</p>
+                    
+                    <div class="btn-container"><a href="/html/articles.html" class="btn">Прочети</a></div>
+                </div>
+            
+                <div class="cat-aside">
+                    <div class="gallery">
+                        <div class="gallery-item" onclick="openModal('/images/adopt_cat.webp', 'Осинови коте', 'Вира', 'Вира е невероятна котка...')">
+                            <img src="/images/adopt_cat.webp" alt="Сладко котенце">
+                            <p>Вира</p>
+                        </div>
+                    </div>
+                    <div class="btn-container"><a href="https://www.four-paws.bg/nashata-rabota/napravleniya/osinovi-ot-chetiri-lapi" target="_blank" class="btn">Осинови</a></div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>🐾 Присъедини се към клуба!</h3>
+                <p>В "Мяукащ свят" всички любители на котки са добре дошли! Не изискваме регистрации – достатъчно е, че обичаш котки. 🐱</p>
+                <ul>
+                    <li>Изпрати ни снимки и истории за твоя пухкав приятел – ще ги публикуваме с удоволствие!</li>
+                    <li>Следи новите статии и котешки събития</li>
+                    <li>Абонирай се по имейл за новини и забавни котешки истории</li>
+                </ul>
+                <p>Разпространявай котешката любов и стани част от нашето общество! 🐾</p>
+                <div class="btn-container"><a href="/html/contact.html" class="btn">Свържи се с нас</a></div>
+            </div>
+        </div>
+
+        <div class="clock">
+            <p>Точно време: <span id="clock"></span></p>
+        </div>
+        <div class="footer">
+            <p>Контакт: myaukaclub@example.com | Тел: +359 888 123 456</p>
+            <p>&copy; 2025 Мяукащ свят</p>
+        </div>
+    </div>
+
+    <!-- Модален прозорец -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" class="modal-image" src="" alt="">
+            <div class="modal-text">
+                <h2 id="modal-title"></h2>
+                <h3 id="modal-subtitle"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
