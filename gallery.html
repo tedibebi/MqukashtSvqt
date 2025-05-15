@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Галерия с най-сладките котки от фен клуба Мяукащ свят.">
+    <meta name="keywords" content="котки, галерия, фен клуб, снимки">
+    <meta name="author" content="Мяукащ свят">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерия – Мяукащ свят</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" onclick="window.location.href='/html/index.html'">
+            <img src="/images/logo.png" alt="Лого" class="logo">
+            <h1>Мяукащ свят</h1>
+            <img src="/images/logo2.png" alt="Mirror лого" class="logo">
+        </div>
+
+        <div class="nav">
+            <a href="/html/index.html">Начало</a>
+            <a href="/html/articles.html">Статии</a>
+            <a href="/html/gallery.html">Галерия</a>
+            <a href="/html/about.html">За нас</a>
+            <a href="/html/contact.html">Контакти</a>
+        </div>
+
+        <div class="content">
+            <h2>Победители в нашия фотоконкурс</h2>
+            <p>Разгледай победителите от последния фотоконкурс "Котка на годината"!</p>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal('/images/cat1.jpg', 'Симба', '1-во място', 'Симба спечели първо място с невероятната си усмивка и слънчева позиция. Той е 3-годишен британски коток, който обича да се излежава в градината и да гледа птички. Собственичката му, Мария, споделя, че Симба е много общителен и обича да поздравява всички посетители.')">
+                    <img src="/images/cat1.jpg" alt="Коте в градина">
+                    <p>Симба – 1-во място</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/images/cat2.jpg', 'Луна', '2-ро място', 'Луна зае второ място с магическите си сини очи. Тя е 2-годишна сиамска котка с невероятно любопитен характер. Обича да се катери на високи места и да наблюдава всичко отгоре. Собственикът й, Георги, казва, че Луна има навика да буди цялото семейство рано сутрин с нежни котенишки целувки.')">
+                    <img src="/images/cat2.jpg" alt="Коте със сини очи">
+                    <p>Луна – 2-ро място</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/images/cat3.jpg', 'Мърко', '3-то място', 'Мърко е нашият трети победител, известен с любовта си към кашоните. Той е 4-годишен европейски коток, който прекарва 90% от времето си в или върху някакъв кашон. Собственичката му, Десислава, споделя, че Мърко има колекция от над 20 кашона в апартамента и знае всеки един по име.')">
+                    <img src="/images/cat3.jpg" alt="Коте в кашон">
+                    <p>Мърко – 3-то място</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/images/cat4.jpg', 'Белла', 'Специална награда', 'Белла получи специалната награда за &quot;Най-философски поглед&quot;. Тя е 5-годишна персийска котка, която обича да прекарва часове, гледайки през прозореца. Според собственика й, Иван, Белла има дълбок мисловен живот и често го изненадва с интелигентното си поведение.')">
+                    <img src="/images/cat4.jpg" alt="Коте на прозореца">
+                    <p>Белла – Специална награда</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/images/cat5.jpg', 'Чарли', 'Публиката избра', 'Чарли е победител в категория &quot;Публиката избра&quot; с невероятния си стил. Той е 1-годишен мейн кун, който обожава да бъде център на внимание. Собственичката му, Антоанета, шие специални дрехички за него, които той носи с невероятна грация.')">
+                    <img src="/images/cat5.jpg" alt="Коте с шал">
+                    <p>Чарли – Публиката избра</p>
+                </div>
+            </div>
+            
+            <!-- Секция за котешки мемета -->
+            <h2 style="margin-top: 40px;">😂 Котешки мемета</h2>
+            <p>Смешни моменти, които само котки могат да преживеят!</p>
+            
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catdragon.jpg',
+                    'Щом драконите не съществуват, тогава какво е това?', 
+                    'Когато си мислиш, че си страшен',
+                    'Този малък &quotдракон&quot всъщност се страхува от прахосмукачката, но поне изглежда смел в Instagram!'
+                )">
+                    <img src="/images/catdragon.jpg" alt="Коте дракон">
+                    <p>Щом драконите не съществуват, тогава какво е това?</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catsnack.jpg',
+                    'Когато видя храна', 
+                    'Режим: лакомо котенце',
+                    'Аз, мислейки си да хапна нещо, пет минути след като съм яла'
+                )">
+                    <img src="/images/catsnack.jpg" alt="Котка с храна">
+                    <p>Аз, мислейки си да хапна нещо, пет минути след като съм яла</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/cat5am.jpg',
+                    '5 сутринта', 
+                    'Когато реша да будя целия дом',
+                    'Този малък терор е готов за деня, докато всички други тепърва ще спят... или поне се опитват'
+                )">
+                    <img src="/images/cat5am.jpg" alt="Котка рано сутрин">
+                    <p>Котката ми в 5 часа сутринта, решена да събуди всички</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catzavesa.jpg',
+                    'Режим: потаен', 
+                    'Когато решиш да стреснеш стопанина',
+                    'Котето ми се крие за пердетата така, защото си мисли, че не го виждам. Но всъщност е толкова очевидно, че дори и съседите го виждат!'
+                )">
+                    <img src="/images/catzavesa.jpg" alt="Котка в шок">
+                    <p>Котето ми се крие за пердетата така, защото си мисли, че не го виждам. Но всъщност е толкова очевидно, че дори и съседите го виждат!</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catlord.jpg',
+                    'Властелинът на пръстените', 
+                    'Един кот да владее всички',
+                    'Когато котката ти открие бижутерията и решава, че е Голум...<br><br>' +
+                    '<em>&quotМое скъпоценно... МОЕ!&quot</em><br><br>' +
+                    'Този малък &quotСаурон&quot не иска да унищожи пръстена, а да си го присвои за вечни игри под дивана.'
+                    )">
+                    <img src="/images/catlord.jpg" alt="Котка с пръстени">
+                    <p>Властелинът на пръстените</p>
+                </div>
+            </div>
+        
+            <!-- Секция за котки с костюми -->
+            <h2 style="margin-top: 40px;">🎭 Котки с костюми</h2>
+            <p>Нашите пухкави моделки демонстрират най-новите модни тенденции!</p>
+            
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catprincess.webp',
+                    'Принцеса Пуфи', 
+                    'Готов за бал',
+                    'С тази розова пола и диадема, Пуфи е готова да покори всички сърца на котешкия бал'
+                )">
+                    <img src="/images/catprincess.webp" alt="Котка принцеса">
+                    <p>Принцеса Пуфи</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catcowboy.jpg',
+                    'Дивият Запад', 
+                    'Каубой Коти',
+                    'Този шериф е готов да арестува всички нарушители... или поне тези, които не му дадат достатъчно лакомства'
+                )">
+                    <img src="/images/catcowboy.jpg" alt="Котка ковбой">
+                    <p>Шериф Коти</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catspongebob.avif',
+                    'Спондж Боб Котпанч', 
+                    'Кой живее в ананас под дивана?',
+                    'Този морски приятел е готов за подводни приключения... или поне за игра с топчета в хола'
+                )">
+                    <img src="/images/catspongebob.avif" alt="Котка Спондж Боб">
+                    <p>Спондж Боб Котпанч</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catwithtie.avif',
+                    'Бизнес Кот', 
+                    'Готов за важна среща',
+                    'С този костюм и вратовръзка, той е готов да поеме контрола върху корпорация &quotДомашен Уют&quot'
+                )">
+                    <img src="/images/catwithtie.avif" alt="Котка с вратовръзка">
+                    <p>Шефът</p>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(
+                    '/images/catwithcrown.avif',
+                    'Негово Височество', 
+                    'Крал на дивана',
+                    'С тази корона, той официално обявява, че всички гушканици и лакомства са му дължими'
+                )">
+                    <img src="/images/catwithcrown.avif" alt="Котка с корона">
+                    <p>Кралят</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модален панел -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-image" src="" alt="Коте от галерията" class="modal-image">
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <h3 id="modal-subtitle"></h3>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Контакт: myaukaclub@example.com | Тел: +359 888 123 456</p>
+            <p>&copy; 2025 Мяукащ свят</p>
+        </div>
+    </div>
+</body>
+</html>

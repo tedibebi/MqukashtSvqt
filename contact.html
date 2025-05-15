@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Свържи се с Мяукащ свят – фен клуб на котките.">
+    <meta name="keywords" content="контакт, фен клуб, котки, имейл, телефон, съобщение">
+    <meta name="author" content="Мяукащ свят">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти – Мяукащ свят</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" onclick="window.location.href='/html/index.html'">
+            <img src="/images/logo.png" alt="Лого" class="logo">
+            <h1>Мяукащ свят</h1>
+            <img src="/images/logo2.png" alt="Mirror лого" class="logo">
+        </div>
+
+        <div class="nav">
+            <a href="/html/index.html">Начало</a>
+            <a href="/html/articles.html">Статии</a>
+            <a href="/html/gallery.html">Галерия</a>
+            <a href="/html/about.html">За нас</a>
+            <a href="/html/contact.html">Контакти</a>
+        </div>
+        
+        <div class="info-section" style="margin-top: 40px;">
+            <h3>🐾 Защо да се свържеш с нас?</h3>
+            <p>💬 Имаш идея за статия, искаш да споделиш снимка на котето си, да участваш в събитие или просто да се запознаем? Пиши ни – винаги се радваме на нови гласове в "Мяукащ свят"!</p>
+        </div>
+        
+        <div class="content">
+            <form name="contactForm" onsubmit="return validateForm()" class="info-section">
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" placeholder="Иван Петров">
+
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" placeholder="ivan@example.com">
+
+                <label for="message">Съобщение:</label>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Напишете съобщението си тук..."></textarea>
+                
+                <label for="attachment">📎 Прикачи снимка (по избор):</label>
+                <input type="file" id="attachment" name="attachment" accept="image/*">
+
+                <input type="submit" value="Изпрати" class="btn">
+            </form>
+
+            <div class="info-section flex-container" style="margin-top: 20px;">
+                <div class="contact-text">
+                    <h3>📫 Контактна информация</h3>
+                    <p>Имейл: myaukaclub@example.com</p>
+                    <p>Телефон: +359 888 123 456</p>
+                    <p>Facebook: <a href="#">facebook.com/myaukaclub</a></p>
+                </div>
+            
+                <div class="map-container">
+                    <iframe 
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23446.13811452502!2d27.89954200760292!3d43.21405088603824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a454ba8ba0481b%3A0xf927da6d324c1cbf!2z0JLQvtGA0YHQtdC70LjRjw!5e0!3m2!1sbg!2sbg!4v1614605298006!5m2!1sbg!2sbg" 
+                     width="100%" 
+                     height="100%" 
+                     style="border:0;" 
+                     allowfullscreen="" 
+                     loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>            
+
+        <div class="footer">
+            <p>Контакт: myaukaclub@example.com | Тел: +359 888 123 456</p>
+            <p>&copy; 2025 Мяукащ свят</p>
+        </div>
+    </div>
+</body>
+</html>
