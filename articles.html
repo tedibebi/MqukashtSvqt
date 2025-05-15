@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Интересни статии за котки от фен клуба Мяукащ свят.">
+    <meta name="keywords" content="котки, грижи за котки, котешки факти, поведение, храна, играчки">
+    <meta name="author" content="Мяукащ свят">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статии – Мяукащ свят</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" onclick="window.location.href='/html/index.html'">
+            <img src="/images/logo.png" alt="Лого" class="logo">
+            <h1>Мяукащ свят</h1>
+            <img src="/images/logo2.png" alt="Mirror лого" class="logo">
+        </div>
+        <div class="nav">
+            <a href="/html/index.html">Начало</a>
+            <a href="/html/articles.html">Статии</a>
+            <a href="/html/gallery.html">Галерия</a>
+            <a href="/html/about.html">За нас</a>
+            <a href="/html/contact.html">Контакти</a>
+        </div>
+
+        <div class="content">
+            <h2>Нашите котешки статии</h2>
+            <p>Тук ще намерите актуални и интересни статии за котките. Всички материали са с посочен източник или автор.</p>
+
+            <!-- Статия от външен източник -->
+            <div class="info-section">
+                <h3>⚠️ 10 неща, които са отровни за котките</h3>
+                <p>Пълен списък на храни, растения и домакински продукти, които са опасни за вашите котки.</p>
+                <div class="article-footer">
+                    <span class="article-source">Източник: <a href="https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list" target="_blank">ASPCA</a></span>
+                    <a href="https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list" target="_blank" class="btn">Прочети още</a>
+                </div>
+            </div>
+
+            <!-- Статия от член на сайта -->
+            <div class="info-section">
+                <h3>🥣 Как да избереш правилната храна за твоята котка</h3>
+                <p>Пълен наръчник за избор на подходяща храна според възраст, порода и здравословно състояние на вашата котка.</p>
+                <div class="article-footer">
+                    <span class="article-source">Автор: д-р Георги Петров, ветеринарен съветник на Мяукащ свят</span>
+                    <a href="#" class="btn" onclick="openModal(
+                        '/images/adopt_cat.webp',
+                        'Как да избереш правилната храна за твоята котка',
+                        'Автор: д-р Георги Петров',
+                        '<h4>1. Възраст</h4>'+
+                        '<p>Котенцата имат различни хранителни нужди от възрастните котки. Те се нуждаят от храна, богата на протеини и мазнини за растеж.</p>'+
+                        '<h4>2. Порода</h4>'+
+                        '<p>Някои породи имат специфични изисквания. Например, персийските котки се нуждаят от храна, която подпомага козината им.</p>'+
+                        '<h4>3. Активност</h4>'+
+                        '<p>Активните котки се нуждаят от повече калории от домашните любимци, които прекарват повече време в сън.</p>'+
+                        '<p><em>Винаги консултирайте се с вашия ветеринар преди да промените диетата на вашата котка.</em></p>'
+                    ); return false;">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🎲 Игри и активности за щастлива котка у дома</h3>
+                <p>10 креативни идеи за игри с котките, които ще ги запазят активни и щастливи, дори в малък апартамент.</p>
+                <div class="article-footer">
+                    <span class="article-source">Източник: <a href="https://www.catster.com/cat-play-games" target="_blank">Catster.com</a></span>
+                    <a href="https://www.catster.com/cat-play-games" target="_blank" class="btn">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🐱 Какво казва опашката на котката?</h3>
+                <p>Котките общуват с нас не само с мяукане, но и с езика на тялото си. Научете как да разбирате емоциите на вашата котка по позицията на опашката ѝ.</p>
+                <div class="article-footer">
+                    <span class="article-source">Източник: <a href="https://www.purina.bg/articles/kotki/obshuvane/kakvo-kazva-opashkata-na-kotkata" target="_blank">Purina Bulgaria</a></span>
+                    <a href="https://www.purina.bg/articles/kotki/obshuvane/kakvo-kazva-opashkata-na-kotkata" target="_blank" class="btn">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🏆 Най-добрите котки за домашни любимци според нашите членове</h3>
+                <p>Резултати от анкета сред нашите членове за най-подходящите породи котки за дома.</p>
+                <div class="article-footer">
+                    <span class="article-source">Автор: Екип Мяукащ свят</span>
+                    <a href="#" class="btn" onclick="openModal(
+                        '/images/adopt_cat.webp',
+                        'Най-добрите котки за домашни любимци',
+                        'Анкета сред членовете на Мяукащ свят',
+                        '<h4 style=\'color:#93827F;margin-top:20px;\'>Топ 5 породи за домашен любимец</h4>' +
+                        '<ol>' +
+                            '<li><strong>Британска късокосместа</strong> - Спокойни и дружелюбни</li>' +
+                            '<li><strong>Мейн кун</strong> - Игриви и социални</li>' +
+                            '<li><strong>Персийска котка</strong> - Спокойни и нежни</li>' +
+                            '<li><strong>Руска синя</strong> - Тихи и привързани</li>' +
+                            '<li><strong>Европейска късокосместа</strong> - Здрави и непритесливи</li>' +
+                        '</ol>' +
+                        '<h4 style=\'color:#93827F;margin-top:20px;\'>Критерии за избор</h4>' +
+                        '<ul>' +
+                            '<li>Дружелюбие към хората</li>' +
+                            '<li>Лесна грижа</li>' +
+                            '<li>Адаптивност към домашна среда</li>' +
+                            '<li>Здравословна порода</li>' +
+                        '</ul>' +
+                        '<p>Анкетата е проведена сред 250 члена на клуба през 2024 г.</p>'
+                    ); return false;">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>📸 Как да снимаме перфектно нашите котки - съвети от фотограф</h3>
+                <p>Професионални съвети за снимане на котки от известния фотограф на животни Иван Стоянов.</p>
+                <div class="article-footer">
+                    <span class="article-source">Автор: Иван Стоянов, член на Мяукащ свят</span>
+                    <a href="#" class="btn" onclick="openModal(
+                        '/images/adopt_cat.webp',
+                        'Как да снимаме перфектно нашите котки',
+                        'Съвети от фотограф Иван Стоянов',
+                        '<h4>1. Осветление</h4>'+
+                        '<ul><li>Използвайте естествена светлина, но не пряка слънчева</li>'+
+                        '<li>Ако снимате вечер, използвайте мека изкуствена светлина</li></ul>'+
+                        '<h4>2. Перспектива</h4>'+
+                        '<ul><li>Снимайте от ниско ниво - на нивото на котката</li>'+
+                        '<li>Избягвайте снимки отгоре, освен ако не е с художествена цел</li></ul>'+
+                        '<h4>3. Техника</h4>'+
+                        '<ul><li>Използвайте бърз затвор (1/250 сек. или по-бърз)</li>'+
+                        '<li>Фокусирайте се върху очите</li>'+
+                        '<li>Използвайте режим за серийно снимане</li></ul>'+
+                        '<h4>4. Завладяване на вниманието</h4>'+
+                        '<ul><li>Използвайте играчки или звуци, за да привлечете вниманието на котката</li>'+
+                        '<li>Опитайте се да заснемете естествени моменти</li></ul>'+
+                        '<p><strong>Най-важното е да бъдете търпеливи и да се забавлявате!</strong></p>'
+                    ); return false;">Прочети още</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Контакт: myaukaclub@example.com | Тел: +359 888 123 456</p>
+            <p>&copy; 2025 Мяукащ свят</p>
+        </div>
+    </div>
+
+    <!-- Съществуващ модален прозорец от галерията -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" class="modal-image" src="" alt="">
+            <div class="modal-text">
+                <h2 id="modal-title"></h2>
+                <h3 id="modal-subtitle"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

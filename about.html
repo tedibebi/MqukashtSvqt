@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Научи повече за фен клуба на котките – Мяукащ свят.">
+    <meta name="keywords" content="за нас, фен клуб, котки, история, мисия">
+    <meta name="author" content="Мяукащ свят">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За нас – Мяукащ свят</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" onclick="window.location.href='/html/index.html'">
+            <img src="/images/logo.png" alt="Лого" class="logo">
+            <h1>Мяукащ свят</h1>
+            <img src="/images/logo2.png" alt="Mirror лого" class="logo">
+        </div>
+        <div class="nav">
+            <a href="/html/index.html">Начало</a>
+            <a href="/html/articles.html">Статии</a>
+            <a href="/html/gallery.html">Галерия</a>
+            <a href="/html/about.html">За нас</a>
+            <a href="/html/contact.html">Контакти</a>
+        </div>
+        <div class="content">
+            <h2>Нашата история и мисия</h2>
+            
+            <div class="info-section flex-container">
+                <div class="cat-text">
+                    <p>„Мяукащ свят" е общност от любители на котки, създадена през 2018 г. с мисията да споделя, вдъхновява и информира. Обичаме всичко, свързано с котките – от смешни мемета до сериозни съвети за грижи и здраве.</p>
+                    
+                    <div class="gallery" style="grid-template-columns: repeat(3, 1fr); margin: 20px 0;">
+                        <div class="gallery-item" style="cursor: default; text-align: center;">
+                            <p style="font-size: 1.5rem; color: #FFC857; margin: 0;">1500+</p>
+                            <p>Членове</p>
+                        </div>
+                        <div class="gallery-item" style="cursor: default; text-align: center;">
+                            <p style="font-size: 1.5rem; color: #FFC857; margin: 0;">50+</p>
+                            <p>Осиновени котки</p>
+                        </div>
+                        <div class="gallery-item" style="cursor: default; text-align: center;">
+                            <p style="font-size: 1.5rem; color: #FFC857; margin: 0;">12</p>
+                            <p>Събития годишно</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-aside">
+                    <div class="gallery-item" onclick="openModal('/images/cat_cafe.jpg', 'Нашият екип', 'Срещнете хората зад Мяукащ свят', 'Нашият екип се състои от предаени любители на котки, работещи с мисия да създадат приятелска общност.')">
+                        <img src="/images/cat_cafe.jpg" alt="Нашият екип">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🐾 Нашата мисия</h3>
+                <div class="gallery">
+                    <div class="gallery-item" onclick="openModal('/images/AnimalServicesVolunteer.webp', 'Котешка общност', 'Създаваме подкрепяща среда', 'Нашата общност обединява хора, които споделят любовта си към котките.')">
+                        <img src="/images/AnimalServicesVolunteer.webp" alt="Котешка общност">
+                        <p><strong>Общност</strong><br>Да създадем подкрепяща котешка общност</p>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/images/brushing-cat.jpg', 'Грижа за котки', 'Образоване и съвети', 'Споделяме знания за правилната грижа и отглеждане на котки.')">
+                        <img src="/images/brushing-cat.jpg" alt="Грижа за котки">
+                        <p><strong>Образование</strong><br>Да споделяме полезна информация</p>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/images/adopt-me.jpg', 'Осиновяване', 'Даваме шанс на бездомни котки', 'Подкрепяме осиновяването на бездомни котки.')">
+                        <img src="/images/adopt-me.jpg" alt="Осиновяване">
+                        <p><strong>Осиновяване</strong><br>Да популяризираме осиновяването</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>😺 Нашият екип</h3>
+                <div class="gallery">
+                    <div class="gallery-item" onclick="openModal(
+                        '/images/2dora.png', 
+                        'Теодора Добрева', 
+                        'Основател и главен ентусиаст', 
+                        '<h4>История</h4>' +
+                        '<p>Теодора основава &quot;Мяукащ свят&quot; през 2018 г., след като усети нуждата от място, където любителите на котки да споделят опита си. Тя е стопанин на 3 котки - Мими, Пухчо и Снежанка, всяка с уникална история за спасяване.</p>' +
+                        '<h4>Достижения</h4>' +
+                        '<ul>' +
+                        '<li>Създала първата котешка общност в България с над 1500 члена</li>' +
+                        '<li>Организирала 12 успешни благотворителни събития годишно</li>' +
+                        '<li>Помогнала за осиновяването на над 50 бездомни котки</li>' +
+                        '</ul>' +
+                        '<h4>Любопитни факти</h4>' +
+                        '<p>Теодора колекционира котешки предмети от цял свят. В свободното си време води блог за котешка психология.</p>'
+                    )">
+                        <img src="/images/2dora.png" alt="Теодора Добрева">
+                        <p><strong>Теодора Добрева</strong><br>Основател</p>
+                    </div>
+                    <div class="gallery-item" onclick="openModal(
+                        '/images/georgi_petrov.jpg', 
+                        'Георги Петров', 
+                        'Ветеринарен съветник с 15 години опит', 
+                        '<h4>Професионален път</h4>' +
+                        '<p>Д-р Петров завършва Ветеринарномедицинския университет в София през 2008 г. Специализирал е котешки заболявания в Лондон и има публикации в международни списания.</p>' +
+                        '<h4>Специализации</h4>' +
+                        '<ul>' +
+                        '<li>Котешка диетология и хранителни нужди</li>' +
+                        '<li>Превентивна медицина за котки</li>' +
+                        '<li>Дентална хигиена при котки</li>' +
+                        '</ul>' +
+                        '<h4>Личен живот</h4>' +
+                        '<p>Георги е стопанин на 2 котки - братя близнаци, спасени от улицата. В свободното си време води безплатни семинари за грижи за котки и участва в кампании за масово стерилизиране.</p>'
+                    )">
+                        <img src="/images/georgi_petrov.jpg" alt="Георги Петров">
+                        <p><strong>Георги Петров</strong><br>Ветеринарен съветник</p>
+                    </div>
+                    <div class="gallery-item" onclick="openModal(
+                        '/images/radi.png', 
+                        'Радостина Петкова', 
+                        'Организатор на събития и креативен директор', 
+                        '<h4>Принос към клуба</h4>' +
+                        '<p>Радостина се присъединява към екипа през 2020 г. и оттогава е организирала над 30 успешни събития, включително годишния &quot;Котешки бал&quot; и &quot;Ден на отворените врати&quot; в приюти.</p>' +
+                        '<h4>Проекти</h4>' +
+                        '<ul>' +
+                        '<li>Котешка фотоизложба &quot;Пухкави модели&quot;</li>' +
+                        '<li>Благотворителен календар &quot;Котки с характер&quot;</li>' +
+                        '<li>Семеен фестивал &quot;Котки и деца&quot;</li>' +
+                        '</ul>' +
+                        '<h4>Хобита</h4>' +
+                        '<p>Освен да организира събития, Радостина рисува портрети на котки и води уроци по &quotйога с котки&quot. Тя е стопанин на Руби - рижава котка, която често участва в нейните проекти.</p>'
+                    )">
+                        <img src="/images/radi.png" alt="Радостина Петкова">
+                        <p><strong>Радостина Петкова</strong><br>Организатор на събития</p>
+                    </div>
+                </div>
+
+            <div class="info-section flex-container">
+                <div class="cat-text">
+                    <h3>🐱 Как да се присъединиш?</h3>
+                    <p>Всеки любител на котки е добре дошъл! Можеш да станеш част от нашата общност по няколко начина:</p>
+                    <ul>
+                        <li>Сподели снимки и истории в нашата галерия</li>
+                        <li>Участвай в нашите събития и конкурси</li>
+                        <li>Абонирай се за нашия бюлетин</li>
+                        <li>Стани доброволец в нашите инициативи</li>
+                    </ul>
+                    <div class="btn-container">
+                        <a href="/html/contact.html" class="btn">Свържи се с нас</a>
+                        <a href="/html/gallery.html" class="btn">Виж галерията</a>
+                    </div>
+                </div>
+                <div class="cat-aside">
+                    <div class="gallery-item" onclick="openModal('/images/logo.png', 'Присъедини се', 'Стани част от общността', 'Присъедини се към нашия клуб за любители на котки!')">
+                        <img src="/images/logo.png" alt="Присъедини се">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>💬 Какво казват нашите членове?</h3>
+                <div class="gallery">
+                    <div class="gallery-item" style="cursor: default; text-align: center;">
+                        <p>"Благодарение на Мяукащ свят открих идеалния домашен любимец за нашите деца."</p>
+                        <p><strong>Елена, София</strong></p>
+                    </div>
+                    <div class="gallery-item" style="cursor: default; text-align: center;">
+                        <p>"На всяко събитие се чувствам като в къщи. Това е мястото, където моята котка е звезда!"</p>
+                        <p><strong>Иван, Пловдив</strong></p>
+                    </div>
+                    <div class="gallery-item" style="cursor: default; text-align: center;">
+                        <p>"Информацията, която споделят, ми помогна да разбера по-добре нуждите на моята котка."</p>
+                        <p><strong>Десислава, Варна</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-image" src="" alt="Коте от галерията" class="modal-image">
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <h3 id="modal-subtitle"></h3>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Контакт: myaukaclub@example.com | Тел: +359 888 123 456</p>
+            <p>&copy; 2025 Мяукащ свят</p>
+        </div>
+    </div>
+</body>
+</html>
